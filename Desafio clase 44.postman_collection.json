@@ -1,0 +1,466 @@
+{
+	"info": {
+		"_postman_id": "8a581371-160c-4084-ad41-8cbf2d3b5f0d",
+		"name": "Desafio clase 44",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23292185"
+	},
+	"item": [
+		{
+			"name": "Ejecucion",
+			"item": [
+				{
+					"name": "GET PRODUCTOS",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query {\r\n    obtenerProductos {\r\n        id\r\n        title\r\n        price\r\n    }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/graphql",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET PRODUCTOS",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "query {\r\n    obtenerProductos {\r\n        id\r\n        title\r\n        price\r\n    }\r\n}",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/graphql",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"graphql"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "217"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d9-3H3RHMZl4PCsqmVWu58hX9cirho\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 11 Apr 2023 05:13:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"obtenerProductos\": [\n            {\n                \"id\": \"63c65744af7f5f4583795e97\",\n                \"title\": \"sprite\",\n                \"price\": 300\n            },\n            {\n                \"id\": \"63c6576b131484005e1354f5\",\n                \"title\": \"coke\",\n                \"price\": 450\n            },\n            {\n                \"id\": \"63c65794131484005e1354f8\",\n                \"title\": \"fanta\",\n                \"price\": 270\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "GET PRODUCTO POR ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query {\r\n    obtenerProducto (id: \"63c65794131484005e1354f8\") {\r\n        title\r\n    }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/graphql",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET PRODUCTO POR ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "query {\r\n    obtenerProducto (id: \"63c65794131484005e1354f8\") {\r\n        title\r\n    }\r\n}",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/graphql",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"graphql"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "46"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2e-d9ZBzxbawvMN9basgWCyY1xjbHQ\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 11 Apr 2023 05:20:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"obtenerProducto\": {\n            \"title\": \"fanta\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "AGREGAR PRODUCTO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "mutation {\r\n    agregarProducto (\r\n        title: \"graphql\"\r\n        description: \"lorem\"\r\n        price: 50\r\n        thumbnail: \"https://dummyimage.com/600x400/000/fff\"\r\n        stock: 2\r\n    ){\r\n        id\r\n        title\r\n        price\r\n    }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/graphql",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AGREGAR PRODUCTO",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "mutation {\r\n    agregarProducto (\r\n        title: \"graphql\"\r\n        description: \"lorem\"\r\n        price: 50\r\n        thumbnail: \"https://dummyimage.com/600x400/000/fff\"\r\n        stock: 2\r\n    ){\r\n        id\r\n        title\r\n        price\r\n    }\r\n}",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/graphql",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"graphql"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "91"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5b-yTLXEbeTbnZci9IVfHxJVlsFBTA\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 11 Apr 2023 05:38:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"agregarProducto\": {\n            \"id\": \"6434f240b23316032313f26c\",\n            \"title\": \"graphql\",\n            \"price\": 50\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "ELIMINAR PRODUCTO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "mutation {\r\n    eliminarProducto (id: \"6434f240b23316032313f26c\"){\r\n        id\r\n        title\r\n        description\r\n        price\r\n        stock\r\n        thumbnail\r\n    }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/graphql",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ELIMINAR PRODUCTO",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "mutation {\r\n    eliminarProducto (id: \"6434f240b23316032313f26c\"){\r\n        id\r\n        title\r\n        description\r\n        price\r\n        stock\r\n        thumbnail\r\n    }\r\n}",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/graphql",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"graphql"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "177"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b1-VDJ4YV4qwf8dVIjW7WPga37nooc\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 11 Apr 2023 05:43:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"eliminarProducto\": {\n            \"id\": \"6434f240b23316032313f26c\",\n            \"title\": \"graphql\",\n            \"description\": \"lorem\",\n            \"price\": 50,\n            \"stock\": 2,\n            \"thumbnail\": \"https://dummyimage.com/600x400/000/fff\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "ACTUALIZAR PRODUCTO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "mutation {\r\n    actualizarProducto(id: \"6434f688a2ada19c6e384ee1\", producto:{description:\"loremIMPSUM\"}){\r\n        id\r\n        title\r\n        description\r\n        price\r\n        stock\r\n        thumbnail\r\n    }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/graphql",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"graphql"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ACTUALIZAR PRODUCTO",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "mutation {\r\n    actualizarProducto(id: \"6434f688a2ada19c6e384ee1\", producto:{description:\"loremIMPSUM\"}){\r\n        id\r\n        title\r\n        description\r\n        price\r\n        stock\r\n        thumbnail\r\n    }\r\n}",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/graphql",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"graphql"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "185"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b9-S12ng3rRYnxOyAQL08OT5ovdO/I\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 11 Apr 2023 06:09:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"actualizarProducto\": {\n            \"id\": \"6434f688a2ada19c6e384ee1\",\n            \"title\": \"graphql\",\n            \"description\": \"loremIMPSUM\",\n            \"price\": 50,\n            \"stock\": 2,\n            \"thumbnail\": \"https://dummyimage.com/600x400/000/fff\"\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
