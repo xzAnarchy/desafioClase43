@@ -3,7 +3,7 @@ import config from '../../config/config.js';
 import { logError, logInfo, logWarning } from '../../loggers/index.js';
 import { asPOJO, removeField, renameField } from '../../utils/objectUtils.js';
 
-class ContenedorMongoDB{
+class ContenedorMongoDB {
   //  #url = 'mongodb+srv://mongodb.net/ecommerce';
   //  #conexion = null;
   //  #mongoose = mongoose;
@@ -27,7 +27,10 @@ class ContenedorMongoDB{
   conectarDB() {
     if (!this.conexion) {
       try {
-        this.conexion = this.mongoose.connect(config.mongoRemote.cnxStr, config.mongoRemote.options);
+        this.conexion = this.mongoose.connect(
+          config.mongoRemote.cnxStr,
+          config.mongoRemote.options
+        );
         logInfo('Conexión a la base de datos establecida.');
       } catch (error) {
         logError('Error al conectar a la base de datos:', error);
@@ -46,7 +49,7 @@ class ContenedorMongoDB{
         logError('Error al desconectar la base de datos:', error);
         throw error;
       }
-    }else {
+    } else {
       logWarning('No hay conexión a la base de datos.');
     }
   }
@@ -93,6 +96,7 @@ class ContenedorMongoDB{
 
   async actualizar(id, nuevoElem) {
     try {
+      logInfo('id:', id);
       renameField(nuevoElem, 'id', '_id');
       const doc = await this.coleccion.findByIdAndUpdate(id, nuevoElem, {
         new: true,
