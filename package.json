@@ -1,0 +1,45 @@
+{
+  "name": "preentregaproyecto1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon index.js",
+    "start": "node index.js",
+    "test": "mocha test/apimocha.test.js",
+    "startProf": "0x index.js",
+    "benchmark": "node scripts/benchmark.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autocannon": "^7.10.0",
+    "axios": "^1.3.4",
+    "compression": "^1.7.4",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.6",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.2",
+    "faker": "^5.4.0",
+    "fork": "^1.3.1",
+    "log4js": "^6.8.0",
+    "minimist": "^1.2.7",
+    "normalizr": "^3.6.2",
+    "socket.io": "^4.5.4",
+    "sqlite3": "^5.1.4"
+  },
+  "devDependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-mongo": "^4.5.0",
+    "cookie-parser": "^1.4.6",
+    "mocha": "^10.2.0",
+    "chai": "^4.3.7",
+    "mongoose": "^6.9.0",
+    "nodemon": "^2.0.20",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
+  }
+}

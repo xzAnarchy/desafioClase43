@@ -1,0 +1,132 @@
+[
+  {
+    "author": {
+      "mail": "m@1",
+      "name": "admin",
+      "lastName": "admin",
+      "age": 18,
+      "username": "Anarchy",
+      "avatar": "https://cdn4.iconfinder.com/data/icons/social-media-and-logos-12/32/Logo_reddit_robot-128.png"
+    },
+    "text": "Bienvenido al canal de chat",
+    "date": "16/1/2023 4:37:56 PM",
+    "id": 1
+  },
+  {
+    "author": {
+      "mail": "m@2",
+      "name": "admin2",
+      "lastName": "admin2",
+      "age": 21,
+      "username": "Anarchy2",
+      "avatar": "https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-128.png"
+    },
+    "text": "Testing 2",
+    "date": "16/1/2023 4:37:56 PM",
+    "id": 2
+  },
+  {
+    "author": {
+      "mail": "m@3",
+      "name": "Gabriel",
+      "lastName": "Mendoza",
+      "age": "22",
+      "username": "efef",
+      "avatar": "https://cdn4.iconfinder.com/data/icons/people-avatar-filled-outline/64/girl_female_adult_people_woman_doctor_avatar-2-128.png"
+    },
+    "text": "wdw3dfw",
+    "date": "16/1/2023 4:37:56 PM",
+    "id": 3
+  },
+  {
+    "author": {
+      "mail": "m@4",
+      "name": "Maria",
+      "lastName": "qda",
+      "age": "13",
+      "username": "fefe",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTteK8zsq_xcB7Sev9b02WlB-feEBTI8oIPAg&usqp=CAU"
+    },
+    "text": "ewafa",
+    "date": "16/1/2023 4:41:41 PM",
+    "id": 4
+  },
+  {
+    "author": {
+      "mail": "m@1",
+      "name": "admin",
+      "lastName": "admin",
+      "age": 18,
+      "username": "Anarchy",
+      "avatar": "https://cdn4.iconfinder.com/data/icons/social-media-and-logos-12/32/Logo_reddit_robot-128.png"
+    },
+    "text": "test",
+    "date": "16/1/2023 10:10:30 PM",
+    "id": 5
+  },
+  {
+    "author": {
+      "mail": "m@5",
+      "name": "testin",
+      "lastName": "testin",
+      "age": "24",
+      "username": "ddmso",
+      "avatar": "https://cdn2.iconfinder.com/data/icons/scenarium-vol-1-2/128/022_workspace_workplace_beard_guy_man_laptop_computer-128.png"
+    },
+    "text": "juju",
+    "date": "16/1/2023 10:10:30 PM",
+    "id": 6
+  },
+  {
+    "author": {
+      "mail": "m@1",
+      "name": "admin",
+      "lastName": "admin",
+      "age": "18",
+      "username": "Anarchy",
+      "avatar": "https://cdn4.iconfinder.com/data/icons/social-media-and-logos-12/32/Logo_reddit_robot-128.png"
+    },
+    "text": "TERMINADO",
+    "date": "16/1/2023 10:52:07 PM",
+    "id": 7
+  },
+  {
+    "author": {
+      "mail": "mendozagabriel726@gmail.com",
+      "name": "Gabriel",
+      "lastName": "Mendoza",
+      "age": "21",
+      "username": "dsds",
+      "avatar": "https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-128.png"
+    },
+    "text": "dsscs",
+    "date": "16/1/2023 11:52:40 PM",
+    "id": 8
+  },
+  {
+    "author": {
+      "mail": "a@a",
+      "name": "gab",
+      "lastName": "test",
+      "age": "23",
+      "username": "testUser",
+      "avatar": "https://dummyimage.com/250/000/fff"
+    },
+    "text": "hola estoy probando!",
+    "date": "1/23/2023, 7:11:07 PM",
+    "id": 9
+  },
+  {
+    "author": {
+      "mail": "test1@test.com",
+      "name": "test",
+      "lastName": "test1",
+      "age": "21",
+      "username": "test1",
+      "avatar": "https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-128.png"
+    },
+    "text": "hola!",
+    "date": "2/21/2023, 11:54:29 PM",
+    "id": 10
+  }
+]

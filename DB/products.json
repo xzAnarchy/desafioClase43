@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Escuadra",
+    "price": 123.45,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png",
+    "id": 1
+  },
+  {
+    "title": "Calculadora",
+    "price": 234.56,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-256.png",
+    "id": 2
+  },
+  {
+    "title": "Reloj",
+    "price": 345.67,
+    "thumbnail": "https://cdn4.iconfinder.com/data/icons/azullustre-mayosoft/AzulLustre_icons/256/Reloj_arena.png",
+    "id": 3
+  },
+  {
+    "title": "Pizza",
+    "price": "234",
+    "thumbnail": "https://media.istockphoto.com/photos/cheesy-pepperoni-pizza-picture-id938742222?k=20&m=938742222&s=612x612&w=0&h=X5AlEERlt4h86X7U7vlGz3bDaDDGQl4C3MuU99u2ZwQ=",
+    "id": 4
+  },
+  {
+    "title": "Pizza",
+    "price": "234",
+    "thumbnail": "https://media.istockphoto.com/photos/cheesy-pepperoni-pizza-picture-id938742222?k=20&m=938742222&s=612x612&w=0&h=X5AlEERlt4h86X7U7vlGz3bDaDDGQl4C3MuU99u2ZwQ=",
+    "id": 5
+  },
+  {
+    "title": "jejeje",
+    "price": "1323",
+    "thumbnail": "https://dummyimage.com/250/000/fff",
+    "id": 6
+  },
+  {
+    "title": "test",
+    "price": "12",
+    "thumbnail": "https://img.freepik.com/foto-gratis/disparo-gran-angular-solo-arbol-que-crece-cielo-nublado-puesta-sol-rodeada-cesped_181624-22807.jpg?w=2000",
+    "id": 7
+  },
+  {
+    "title": "jeje",
+    "price": "12",
+    "thumbnail": "https://img.freepik.com/foto-gratis/disparo-gran-angular-solo-arbol-que-crece-cielo-nublado-puesta-sol-rodeada-cesped_181624-22807.jpg?w=2000",
+    "id": 8
+  },
+  {
+    "title": "Test",
+    "price": "120",
+    "thumbnail": "https://dummyimage.com/250/000/fff",
+    "id": 9
+  },
+  {
+    "title": "Test",
+    "price": "1323",
+    "thumbnail": "https://img.freepik.com/foto-gratis/disparo-gran-angular-solo-arbol-que-crece-cielo-nublado-puesta-sol-rodeada-cesped_181624-22807.jpg?w=2000",
+    "id": 10
+  }
+]
