@@ -123,6 +123,21 @@ app.get('/test', async (req, res) => {
 import {api} from './src/api/productos.js'
 app.use('/apiProductos', api)
 
+//  Api Rest con GraphQL
+import { graphqlHTTP } from 'express-graphql'
+import ProductosSchema from './src/graphql/schema.js'
+import { obtenerProducto, obtenerProductos, eliminarProducto, agregarProducto, actualizarProducto } from './src/graphql/resolvers.js'
+
+app.use('/graphql', graphqlHTTP({
+    schema: ProductosSchema,
+    rootValue: {
+        obtenerProducto, 
+        obtenerProductos, 
+        eliminarProducto, 
+        agregarProducto,
+        actualizarProducto},
+    graphiql: true,
+}))
 
 //--------------------------------------------
 // inicio el servidor
